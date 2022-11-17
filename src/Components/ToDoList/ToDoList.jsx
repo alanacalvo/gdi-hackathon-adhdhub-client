@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import FormTodo from './FormTodo';
 import Todo from './Todo';
-import './ToDoList.css'
+import './ToDoList.scss'
 
 function ToDoList() {
 

@@ -1,0 +1,13 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  header {
+    display: flex;
+    background-color: pink;
+    width: 100vw;
+    justify-content: center;
+  }
+}

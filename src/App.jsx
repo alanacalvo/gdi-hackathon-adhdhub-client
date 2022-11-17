@@ -1,10 +1,12 @@
-import './App.css';
+import './App.scss';
 import ToDoList from './Components/ToDoList/ToDoList';
 
 function App() {
   return (
     <div className="App">
-      <h1>ADHDHub</h1>
+      <header>
+        <h1>FocusUp</h1>
+      </header>
       <ToDoList />
     </div>
   );

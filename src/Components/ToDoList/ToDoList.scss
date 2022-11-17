@@ -1,0 +1,27 @@
+* {
+  border: gold 1px solid;
+}
+
+.todoContainer {
+  background-color: coral;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .todo {
+    display: flex;
+    justify-content: space-between;
+
+
+    button {
+
+    }
+  }
+}
