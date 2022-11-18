@@ -1,0 +1,29 @@
+@import '../../global.scss';
+
+.dailyGoalTracker {
+  background-color: $lightgray;
+  height: 275px;
+  width: 400px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  justify-content: space-between;
+  
+  .icons {
+    display: flex;
+    justify-content: space-around;
+    width: inherit;
+    padding-bottom: 90px;
+    
+    img{
+      height: 66px;
+      width: 66px;
+      border: 1px solid $magicmint;
+      background-color: rgba(176, 132, 204, .5);
+      border-radius: 5px;
+      padding: 5px;
+    }
+  }
+}
