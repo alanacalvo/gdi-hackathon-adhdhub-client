@@ -1,13 +1,14 @@
-* {
-  border: gold 1px solid;
-}
+// * {
+//   border: gold 1px solid;
+// }
 
 .todoContainer {
   background-color: coral;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40vw;
+  width: 35vw;
+  height: 100vh;
   
   form {
     display: flex;
