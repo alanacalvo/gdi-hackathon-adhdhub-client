@@ -1,28 +1,96 @@
-// * {
-//   border: gold 1px solid;
-// }
+@import 'src/global.scss';
+
 
 .todoContainer {
-  background-color: coral;
+  background-color: white;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 1rem;
   width: 35vw;
-  height: 100vh;
+  max-height: 70vh;
+  margin: 1rem;
+  padding: 1.5rem;
+  overflow:auto;
+
+  h1 {
+    font-size: 1.2rem;
+    color: $africanviolet;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-bottom: 0;
+  }
+
+  .subtitle {
+    color: $africanviolet;
+    font-size: 0.7rem;
+    align-self: flex-start;
+  }
   
   form {
+    display: block;
+    gap: 0.5rem;
+    width:100%;
+    justify-content: flex-start;
+    width: 100%;
+  
+    input {
+      border: .2px solid gray;
+      border-radius: 3px;
+      height: 6vh;
+      padding: 10px;
+      font-size: 0.7rem;
+      width:100%;
+    }
+   
+    // .button-submit {
+    //   border: .5px solid $purplenavy;
+    //   border-radius: 3px;
+    //   height: 6vh;
+    //   width: 10vh;
+    //   background-color: white;
+    //   font-size: 0.7rem;
+    //   }
+  }
+}
+
+  .todo-list {
     display: flex;
+    width:100%;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-start;
+    
+  }
+
+  .displayTodos {
+    width: 100%;
   }
 
   .todo {
     display: flex;
-    justify-content: space-between;
+    border: .5px solid $lightgray;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    padding: 8px 5px;
+    color: black;
+    margin: 5px 0;
+    width: 100%;
 
-
-    button {
-
+    .add-button, .remove-button {
+      background-color: $turquise;
+      color: white;
+      border:none;
+      padding: 2px 5px;
+      margin: 0 2px;
     }
+    .remove-button {
+      background-color: $africanviolet;
+      margin-right: 8px;
+      color:white;
+    }
+
   }
-}
+
+
