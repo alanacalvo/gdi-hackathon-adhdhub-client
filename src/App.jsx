@@ -9,12 +9,30 @@ function App() {
       <header>
         <h1>FocusUp</h1>
       </header>
-      <Router>
-        <Routes>
-          <Route path='/' element={<HomePage />}></Route>
-          <Route path='/timer' element={<TimerPage />}></Route>
-        </Routes>
-      </Router>
+      <main className='main-content-wrapper'>
+        <Router>
+          <Routes>
+            <Route path='/' element={<HomePage />}></Route>
+            <Route path='/timer' element={<TimerPage />}></Route>
+          </Routes>
+        </Router>
+      </main>
+      <div className='sideNav'>
+        <div className='navItem'>
+          
+        </div>
+        <div>
+          <div className='navItem'>
+            
+          </div>
+          <div className='navItem'>
+            
+            </div>
+            <div className='navItem'>
+            
+            </div>
+        </div>
+      </div>
     </div>
   );
 }

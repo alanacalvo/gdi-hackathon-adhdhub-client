@@ -4,20 +4,50 @@
 
 $darkpurple: #190933;
 
+html, body, #root {
+  height: 100%
+}
 
 .App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  grid-template-columns: 1fr 70px;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
 
   header {
     display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
     background-color: pink;
     width: 100vw;
     justify-content: center;
   }
+
+  .main-content-wrapper {
+    margin: 0 auto;
+  }
+
+  .sideNav {
+    background-color: #665687;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navItem {
+    background-color: yellow;
+    padding: 18px;
+    margin: 6px 0;
+    border-radius: 100%;
+    display: flex;
+  }
+
 }
+
+
 
 // body {
 //   display: flex;
