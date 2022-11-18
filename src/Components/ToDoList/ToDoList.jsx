@@ -24,6 +24,7 @@ function ToDoList() {
   };
 
   const removeTodo = index => {
+    
     const newTodos = [...todos];
     newTodos.splice(index, 1);
     setTodos(newTodos);
@@ -32,9 +33,9 @@ function ToDoList() {
   return (
     <>
       <div className="todoContainer">
-        <h1>To Do List</h1>
-        <FormTodo addTodo={addTodo} />
-        <div>
+        <h1 className="pageTitle">To Do</h1>
+        <span className="subtitle"> Your tasks</span>
+        <div className='todo-list'>
           {todos.map((todo, index) => (
             <div className="displayTodos">
               <Todo
@@ -47,6 +48,8 @@ function ToDoList() {
             </div>
           ))}
         </div>
+        <FormTodo addTodo={addTodo} />
+
       </div>
     </>
   )
