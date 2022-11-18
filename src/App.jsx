@@ -1,6 +1,5 @@
 import './App.scss';
-import { Routes, Route, BrowserRouter as Router, Navigate } from 'react-router-dom';
-import ToDoList from './Components/ToDoList/ToDoList';
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import TimerPage from './Views/TimerPage/TimerPage';
 import HomePage from './Views/HomePage/HomePage';
 
