@@ -1,3 +1,5 @@
+/* @import "./src/global.scss"; */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -6,7 +8,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  height: 54vw;
+  height: 100%;
+  background-color: #190933 !important;
 }
 
 code {

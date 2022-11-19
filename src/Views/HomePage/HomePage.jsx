@@ -3,7 +3,7 @@ import "./HomePage.scss";
 import Timer from "../../Components/Timer/Timer";
 import ToDoList from "../../Components/ToDoList/ToDoList";
 import DailyGoalTracker from "../../Components/DailyGoalTracker/DailyGoalTracker";
-// import SideNav from '../../Components/SideNav/SideNav';
+import SideNav from '../../Components/SideNav/SideNav';
 
 function HomePage() {
   return (
@@ -15,6 +15,7 @@ function HomePage() {
           <DailyGoalTracker />
         </div>
       </div>
+        <SideNav /> 
     </div>
   );
 }
