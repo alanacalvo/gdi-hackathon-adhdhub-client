@@ -5,7 +5,7 @@ import {Link} from "react-router-dom"
 
 function LandingPageButton() {
     return <Link to="/home" class="nav-link">
-        <button class="btn btn-green" > 
+        <button class="btn-green" > 
             <span style={{"font-size": "24px"}}>
                 Login
             </span>
