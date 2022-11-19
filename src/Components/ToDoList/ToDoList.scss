@@ -14,7 +14,7 @@
   overflow: auto;
 
   h1 {
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: $africanviolet;
     font-weight: bold;
     align-self: flex-start;
@@ -23,7 +23,7 @@
 
   .subtitle {
     color: $africanviolet;
-    font-size: 0.7rem;
+    font-size: 1.5rem;
     align-self: flex-start;
   }
 
@@ -78,15 +78,18 @@
 
   .add-button,
   .remove-button {
-    background-color: $turquise;
-    color: white;
-    border: none;
     padding: 2px 5px;
     margin: 0 2px;
+    background: none;
+    border: none;
   }
+
+  .add-button {
+    color: $turquise;
+  }
+
   .remove-button {
-    background-color: $africanviolet;
+    color: $africanviolet;
     margin-right: 8px;
-    color: white;
   }
 }
