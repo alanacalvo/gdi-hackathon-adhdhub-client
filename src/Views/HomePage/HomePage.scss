@@ -1,22 +1,21 @@
-@import '../../global.scss';
-
+@import "../../global.scss";
 
 .homepageContainer {
   display: flex;
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  padding-top: 100px;
   // border: gold 1px solid;
 
   .homepage {
     display: flex;
-    padding: 50px;
+    padding: 2rem;
     height: 100%;
+    margin: 0 1rem 0 5rem;
     // border: gold 1px solid;
+  }
 
-    .rightSide {
-      height: 100%;
-    }
+  .rightSide {
+    margin-right: 5rem;
   }
 }
