@@ -1,9 +1,9 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .sideNav {
   display: flex;
   flex-direction: column;
-  background-color: #280F52;
+  background-color: #280f52;
   height: 100vh;
   width: 70px;
   justify-content: space-between;
@@ -11,9 +11,22 @@
 }
 
 .navItem {
-    background-color: $africanviolet;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 100%;
-    display: flex;
+  color: $africanviolet;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.navItem:nth-child(2) {
+  font-size: 2.1rem;
+  left: 0.2rem;
+}
+
+.navItem:nth-child(3) {
+  left: -0.1rem;
+}
+
+#profile-pic {
+  width: 70%;
+  margin: 2rem 0.7rem;
 }
