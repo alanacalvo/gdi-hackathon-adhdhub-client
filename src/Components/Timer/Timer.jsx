@@ -71,7 +71,7 @@ function Timer() {
 
   return (
     <div className="pomodoro-app">
-      <Header title="pomodoro" />
+      {/* <Header title="pomodoro" /> */}
       <Controls
         timerMode={timerMode}
         setTimerMode={setTimerMode}

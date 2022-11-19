@@ -1,0 +1,19 @@
+@import '../../global.scss';
+
+.sideNav {
+  display: flex;
+  flex-direction: column;
+  background-color: #280F52;
+  height: 100vh;
+  width: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navItem {
+    background-color: $africanviolet;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 100%;
+    display: flex;
+}

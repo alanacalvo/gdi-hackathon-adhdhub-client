@@ -1,4 +1,5 @@
 import React from 'react'
+// import '../../../global.scss'
 import MuteToggle from '../MuteToggle/mutetoggle'
 import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar'
 import 'react-circular-progressbar/dist/styles.css'
@@ -72,7 +73,7 @@ const TimerDisplay = ({ timerMode,
             // How long animation takes to go from one percentage to another, in seconds
             pathTransitionDuration: 0.5,
             // Colors & Fonts
-            pathColor: 'var(--accent-color)',
+            pathColor: '#5DD9C1',
             textColor: 'var(--text)',
             textSize: textSize,
             fontFamily: 'var(--font-current)',
