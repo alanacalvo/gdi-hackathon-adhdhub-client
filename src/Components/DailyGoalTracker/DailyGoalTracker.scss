@@ -18,7 +18,7 @@
     font-weight: bold;
     justify-content: left;
     position: relative;
-    top: 0.8rem;
+    top: 0.1rem;
     left: -5.5rem;
   }
 
@@ -28,32 +28,63 @@
     justify-content: left;
     position: relative;
     left: -0.1rem;
+    top: 1rem;
+  }
+
+  label {
+    position: relative;
+    top: -0.3rem;
   }
 
   .goal {
     margin-bottom: 1.5rem;
     width: 345px;
-    height: 2.5rem;
+    height: 3rem;
     border: 1px solid $lightgray;
     border-radius: 5px;
-    padding: 0.4rem 0 0.5rem 0.8rem;
   }
 
-  .completed-btn {
-    position: relative;
-    left: 9rem;
-    font-size: 1rem;
-    color: $turquise;
-    border: none;
-    background: none;
+  input[type="checkbox"] {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 0.8rem;
   }
+
+  input:checked {
+    background-color: $africanviolet !important;
+  }
+
+  // .completed-btn {
+  //   position: relative;
+  //   left: 9rem;
+  //   font-size: 1rem;
+  //   color: $turquise;
+  //   border: none;
+  //   background: none;
+  // }
 
   .remove-btn {
-    position: relative;
-    left: 9rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
     border: none;
     background: none;
     color: $africanviolet;
+    position: relative;
+    top: -2px;
+  }
+
+  #first {
+    left: 9rem;
+  }
+
+  #second {
+    left: 6.1rem;
+  }
+
+  #third {
+    left: 3.2rem;
+  }
+
+  #fourth {
+    left: 2rem;
   }
 }

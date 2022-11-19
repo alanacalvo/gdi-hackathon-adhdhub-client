@@ -1,9 +1,5 @@
 import React from "react";
 import "./SideNav.scss";
-// import userProfile from './Icons/user-profile-64.png';
-// import calendar from './Icons/calendar-50.png';
-// import settings from './Icons/settings-64.png';
-// import logout from './Icons/logout-50.png';
 
 function SideNav() {
   return (
