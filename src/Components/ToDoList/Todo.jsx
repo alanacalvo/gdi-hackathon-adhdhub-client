@@ -4,6 +4,9 @@ import "./ToDoList.scss";
 function Todo({ todo, index, markTodo, removeTodo }) {
   return (
     <div className="todo">
+      <span style={{ textDecoration: todo.isComplete ? "line-through" : "" }}>
+        {todo.text}
+      </span>
       <div className="buttons">
         <button className="add-button" onClick={() => markTodo(index)}>
           <i className="fa-solid fa-check" aria-hidden="true"></i>{" "}
@@ -12,9 +15,6 @@ function Todo({ todo, index, markTodo, removeTodo }) {
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
-      <span style={{ textDecoration: todo.isComplete ? "line-through" : "" }}>
-        {todo.text}
-      </span>
     </div>
   );
 }

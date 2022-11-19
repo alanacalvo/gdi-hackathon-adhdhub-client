@@ -32,7 +32,7 @@ function ToDoList() {
     <>
       <div className="todoContainer">
         <h1 className="pageTitle">To Do</h1>
-        <span className="subtitle"> Your tasks</span>
+        {/* <span className="subtitle"> Your tasks</span> */}
         <div className="todo-list">
           {todos.map((todo, index) => (
             <div className="displayTodos">
