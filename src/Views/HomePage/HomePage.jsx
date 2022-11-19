@@ -1,12 +1,11 @@
-import React from 'react';
-import './HomePage.scss';
-import Timer from '../../Components/Timer/Timer';
-import ToDoList from '../../Components/ToDoList/ToDoList';
-import DailyGoalTracker from '../../Components/DailyGoalTracker/DailyGoalTracker';
-import SideNav from '../../Components/SideNav/SideNav';
+import React from "react";
+import "./HomePage.scss";
+import Timer from "../../Components/Timer/Timer";
+import ToDoList from "../../Components/ToDoList/ToDoList";
+import DailyGoalTracker from "../../Components/DailyGoalTracker/DailyGoalTracker";
+// import SideNav from '../../Components/SideNav/SideNav';
 
 function HomePage() {
-
   return (
     <div className="homepageContainer">
       <div className="homepage">
@@ -17,8 +16,7 @@ function HomePage() {
         </div>
       </div>
     </div>
-
-  )
+  );
 }
 
 export default HomePage;

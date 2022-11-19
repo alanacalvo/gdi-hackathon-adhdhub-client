@@ -1,8 +1,8 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .dailyGoalTracker {
   background-color: white;
-  height: 37.5%;
+  height: 49%;
   width: 400px;
   padding: 10px;
   margin-top: 1rem;
@@ -11,17 +11,17 @@
   flex-direction: column;
   border-radius: 20px;
   justify-content: space-between;
-  
+
   .icons {
     display: flex;
     justify-content: space-around;
     width: inherit;
     padding-bottom: 90px;
-    
-    img{
+
+    img {
       height: 75px;
       width: 75px;
-      background-color: rgba(176, 132, 204, .5);
+      background-color: rgba(176, 132, 204, 0.5);
       border-radius: 5px;
       padding: 7px;
     }

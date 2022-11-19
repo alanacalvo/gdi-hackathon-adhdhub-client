@@ -1,5 +1,4 @@
-@import 'src/global.scss';
-
+@import "src/global.scss";
 
 .todoContainer {
   background-color: white;
@@ -9,10 +8,10 @@
   align-items: center;
   row-gap: 1rem;
   width: 35vw;
-  max-height: 80%;
+  height: 50.5vw;
   margin-right: 1rem;
   padding: 1.5rem;
-  overflow:auto;
+  overflow: auto;
 
   h1 {
     font-size: 1.2rem;
@@ -27,23 +26,23 @@
     font-size: 0.7rem;
     align-self: flex-start;
   }
-  
+
   form {
     display: block;
     gap: 0.5rem;
-    width:100%;
+    width: 100%;
     justify-content: flex-start;
     width: 100%;
-  
+
     input {
-      border: .2px solid gray;
+      border: 0.2px solid gray;
       border-radius: 3px;
       height: 6vh;
       padding: 10px;
       font-size: 0.7rem;
-      width:100%;
+      width: 100%;
     }
-   
+
     // .button-submit {
     //   border: .5px solid $purplenavy;
     //   border-radius: 3px;
@@ -55,42 +54,39 @@
   }
 }
 
-  .todo-list {
-    display: flex;
-    width:100%;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    
+.todo-list {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.displayTodos {
+  width: 100%;
+}
+
+.todo {
+  display: flex;
+  border: 0.5px solid $lightgray;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  padding: 8px 5px;
+  color: black;
+  margin: 5px 0;
+  width: 100%;
+
+  .add-button,
+  .remove-button {
+    background-color: $turquise;
+    color: white;
+    border: none;
+    padding: 2px 5px;
+    margin: 0 2px;
   }
-
-  .displayTodos {
-    width: 100%;
+  .remove-button {
+    background-color: $africanviolet;
+    margin-right: 8px;
+    color: white;
   }
-
-  .todo {
-    display: flex;
-    border: .5px solid $lightgray;
-    border-radius: 5px;
-    font-size: 0.7rem;
-    padding: 8px 5px;
-    color: black;
-    margin: 5px 0;
-    width: 100%;
-
-    .add-button, .remove-button {
-      background-color: $turquise;
-      color: white;
-      border:none;
-      padding: 2px 5px;
-      margin: 0 2px;
-    }
-    .remove-button {
-      background-color: $africanviolet;
-      margin-right: 8px;
-      color:white;
-    }
-
-  }
-
-
+}
