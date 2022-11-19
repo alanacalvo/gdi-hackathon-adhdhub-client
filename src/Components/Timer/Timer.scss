@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
-@import '../../global.scss';
+@import "../../global.scss";
 
 :root {
-  --accent-color: #f87070;
+  --accent-color: #bdf9db;
   --background-body: #1e213f;
   --text: #d7e0ff;
   --text-dark: #1e213f;
@@ -12,9 +12,9 @@
   --input-background: #eff1fa;
   --background-timer: #161932;
   --settings-heading: #161932;
-  --default-accent: #f87070;
-  --blue-accent: #70f3f8;
-  --purple-accent: #d881f8;
+  --default-accent: #bdf9db;
+  --turquoise-accent: #7cd6c2;
+  --violet-accent: #a988c7;
 
   --font-current: "Kumbh Sans", sans-serif;
   --font-default: "Kumbh Sans", sans-serif;
@@ -23,29 +23,27 @@
 }
 
 .pomodoro-app {
-
-  * {
-    // border: gold 1px solid;
-  }
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 40%;
+  height: 55%;
   width: 400px;
-  padding-bottom: 16px;
+  padding: 2rem 0;
   background: white;
   font-family: var(--font-current);
-  padding: 10px;
   border-radius: 20px;
+
+  // .pomodoro-app * {
+  //   // border: gold 1px solid;
+  // }
 
   .controls {
     display: flex;
     justify-content: space-between;
     background: $russianviolet;
     border-radius: 31.5px;
-    margin: 10px;
+    margin: 1.5rem;
     min-height: 50px;
     width: 340px;
     padding: 8px 6px 8px 6px;
@@ -80,7 +78,7 @@
     cursor: pointer;
   }
 
-  .controls input[type="radio"]:checked+label {
+  .controls input[type="radio"]:checked + label {
     color: var(--text-dark);
     opacity: 1;
     background: $turquise;
@@ -108,8 +106,8 @@
 
   .timer__display {
     // display: flex;
-    // justify-content: center; 
-    // align-items: center; 
+    // justify-content: center;
+    // align-items: center;
     // flex-wrap: wrap;
     // height: 89.26%;
     // width: 89.26%;
@@ -156,11 +154,11 @@
   }
 
   .pomodoro-app__preferences {
-    margin-top: 15px;
     border: 0;
     background: none;
     transition: transform 0.15s ease-in-out;
     cursor: pointer;
+    margin: 1.5rem 0;
   }
 
   .pomodoro-app__preferences:hover {
@@ -297,7 +295,9 @@
   input[type="number"]::-webkit-inner-spin-button {
     margin-right: 16px;
     -webkit-appearance: none;
-    background: url("data:image/svg+xml,%3Csvg width='14' height='21' viewBox='0 0 14 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 6L7 2L13 6' stroke='%231E213F' stroke-opacity='0.25' stroke-width='2'/%3E%3Cpath d='M1 15L7 19L13 15' stroke='%231E213F' stroke-opacity='0.25' stroke-width='2'/%3E%3C/svg%3E%0A") no-repeat center center;
+    appearance: none;
+    background: url("data:image/svg+xml,%3Csvg width='14' height='21' viewBox='0 0 14 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 6L7 2L13 6' stroke='%231E213F' stroke-opacity='0.25' stroke-width='2'/%3E%3Cpath d='M1 15L7 19L13 15' stroke='%231E213F' stroke-opacity='0.25' stroke-width='2'/%3E%3C/svg%3E%0A")
+      no-repeat center center;
     height: 21px;
     width: 14px;
     opacity: 0.5;
@@ -319,8 +319,8 @@
     width: 0;
   }
 
-  .pane__color-preference input[type="radio"]+label,
-  .pane__font-preference input[type="radio"]+label {
+  .pane__color-preference input[type="radio"] + label,
+  .pane__font-preference input[type="radio"] + label {
     opacity: 1;
     display: flex;
     justify-content: center;
@@ -329,8 +329,8 @@
     cursor: pointer;
   }
 
-  .pane__color-preference input[type="radio"]+label:hover,
-  .pane__font-preference input[type="radio"]+label:hover {
+  .pane__color-preference input[type="radio"] + label:hover,
+  .pane__font-preference input[type="radio"] + label:hover {
     transform: scale(1.1);
   }
 
@@ -371,12 +371,12 @@
     color: var(--text-dark);
   }
 
-  .pane__font-preference input[type="radio"]:checked+label {
+  .pane__font-preference input[type="radio"]:checked + label {
     background: var(--settings-heading);
     color: #fff;
   }
 
-  .pane__font-preference input[type="radio"]:hover+label {
+  .pane__font-preference input[type="radio"]:hover + label {
     background: var(--settings-heading);
     color: #fff;
     opacity: 0.9;
@@ -403,20 +403,20 @@
   }
 
   .color-preference__blue {
-    background-color: var(--blue-accent);
+    background-color: var(--turquoise-accent);
   }
 
   .color-preference__purple {
-    background-color: var(--purple-accent);
+    background-color: var(--violet-accent);
   }
 
-  .pane__color-preference input[type="radio"]:checked+label {
+  .pane__color-preference input[type="radio"]:checked + label {
     background-image: url("data:image/svg+xml,%3Csvg width='15' height='11' viewBox='0 0 15 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5.5L4.95263 9.45263L13.4053 1' stroke='%23161932' stroke-width='2'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  .pane__color-preference input[type="radio"]:hover+label {
+  .pane__color-preference input[type="radio"]:hover + label {
     background-image: url("data:image/svg+xml,%3Csvg width='15' height='11' viewBox='0 0 15 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5.5L4.95263 9.45263L13.4053 1' stroke='%23161932' stroke-width='2'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-position: center;
@@ -438,7 +438,7 @@
     font-family: Kumbh Sans;
     font-weight: bold;
     font-size: 16px;
-    color: #ffffff;
+    color: #000000;
     transition: transform 0.15s ease-in-out;
     cursor: pointer;
   }
@@ -456,7 +456,6 @@
     // .pomodoro-app {
     //   height: 100%;
     // }
-
 
     .controls__button {
       font-size: 14px;

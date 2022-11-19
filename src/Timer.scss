@@ -39,11 +39,6 @@
 // }
 
 .pomodoro-app {
-
-  * {
-    // border: gold 1px solid;
-  }
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,6 +48,10 @@
   background: var(--background-body);
   font-family: var(--font-current);
   padding: 10px;
+
+  // .pomodoro-app * {
+  //   // border: gold 1px solid;
+  // }
 
   h1 {
     font-family: "Kumbh Sans", sans-serif;
@@ -104,7 +103,7 @@
     cursor: pointer;
   }
 
-  .controls input[type="radio"]:checked+label {
+  .controls input[type="radio"]:checked + label {
     color: var(--text-dark);
     opacity: 1;
     background: var(--accent-color);
@@ -322,7 +321,9 @@
   input[type="number"]::-webkit-inner-spin-button {
     margin-right: 16px;
     -webkit-appearance: none;
-    background: url("data:image/svg+xml,%3Csvg width='14' height='21' viewBox='0 0 14 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 6L7 2L13 6' stroke='%231E213F' stroke-opacity='0.25' stroke-width='2'/%3E%3Cpath d='M1 15L7 19L13 15' stroke='%231E213F' stroke-opacity='0.25' stroke-width='2'/%3E%3C/svg%3E%0A") no-repeat center center;
+    appearance: none;
+    background: url("data:image/svg+xml,%3Csvg width='14' height='21' viewBox='0 0 14 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 6L7 2L13 6' stroke='%231E213F' stroke-opacity='0.25' stroke-width='2'/%3E%3Cpath d='M1 15L7 19L13 15' stroke='%231E213F' stroke-opacity='0.25' stroke-width='2'/%3E%3C/svg%3E%0A")
+      no-repeat center center;
     height: 21px;
     width: 14px;
     opacity: 0.5;
@@ -344,8 +345,8 @@
     width: 0;
   }
 
-  .pane__color-preference input[type="radio"]+label,
-  .pane__font-preference input[type="radio"]+label {
+  .pane__color-preference input[type="radio"] + label,
+  .pane__font-preference input[type="radio"] + label {
     opacity: 1;
     display: flex;
     justify-content: center;
@@ -354,8 +355,8 @@
     cursor: pointer;
   }
 
-  .pane__color-preference input[type="radio"]+label:hover,
-  .pane__font-preference input[type="radio"]+label:hover {
+  .pane__color-preference input[type="radio"] + label:hover,
+  .pane__font-preference input[type="radio"] + label:hover {
     transform: scale(1.1);
   }
 
@@ -396,12 +397,12 @@
     color: var(--text-dark);
   }
 
-  .pane__font-preference input[type="radio"]:checked+label {
+  .pane__font-preference input[type="radio"]:checked + label {
     background: var(--settings-heading);
     color: #fff;
   }
 
-  .pane__font-preference input[type="radio"]:hover+label {
+  .pane__font-preference input[type="radio"]:hover + label {
     background: var(--settings-heading);
     color: #fff;
     opacity: 0.9;
@@ -435,13 +436,13 @@
     background-color: var(--purple-accent);
   }
 
-  .pane__color-preference input[type="radio"]:checked+label {
+  .pane__color-preference input[type="radio"]:checked + label {
     background-image: url("data:image/svg+xml,%3Csvg width='15' height='11' viewBox='0 0 15 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5.5L4.95263 9.45263L13.4053 1' stroke='%23161932' stroke-width='2'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  .pane__color-preference input[type="radio"]:hover+label {
+  .pane__color-preference input[type="radio"]:hover + label {
     background-image: url("data:image/svg+xml,%3Csvg width='15' height='11' viewBox='0 0 15 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5.5L4.95263 9.45263L13.4053 1' stroke='%23161932' stroke-width='2'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-position: center;
@@ -481,7 +482,6 @@
     // .pomodoro-app {
     //   height: 100%;
     // }
-
 
     .controls__button {
       font-size: 14px;
