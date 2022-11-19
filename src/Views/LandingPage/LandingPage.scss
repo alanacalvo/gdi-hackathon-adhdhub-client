@@ -1,0 +1,15 @@
+
+@import "src/global.scss";
+
+.Landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kumbh Sans", sans-serif;
+    background-color: #190933;
+    height: 100%;
+  }
+
+  .btn-green {
+    background-color:$turquise;
+  }
